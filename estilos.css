@@ -46,12 +46,12 @@ div[attr1$="s"]{
     margin-left: 10px;
 }
 
-/*Elemento donde el atributo contiene con el valor dado*/
+/*Elemento donde el atributo contiene con el valor dado, tiene que estar completo*/
 div[attr1~="Parrafo"]{
     border: 1px solid black;
 }
 
-/*Elemento donde el atributo contiene con el valor dado*/
+/*Elemento donde el atributo contiene con el valor dado, no necesita estar completo*/
 div[attr1*="do"]{
     text-transform: uppercase;
 }
