@@ -16,3 +16,42 @@ p{
 .border{
     border: 1px solid black;
 }
+
+/*Elemento que contenga el atributo attr1*/
+div[attr1]{
+    font-family: cursive;
+}
+/*Tambien puede ser de la sig manera:
+[attr1]{
+    font-family: cursive;
+}*/
+
+/*Elemento donde el atributo sea completamente igual*/
+div[attr1="Parrafo-uno"]{
+    font-size: 20px;
+}
+
+/*Elemento donde el atributo empiece con el valor dado*/
+div[attr1|="Parrafo"]{
+    font-weight: bold;
+}
+
+/*Elemento donde el atributo empiece con el valor dado sin importar lo que tenga despues*/
+div[attr1^="Par"]{
+    color:blueviolet;
+}
+
+/*Elemento donde el atributo termine con el valor dado*/
+div[attr1$="s"]{
+    margin-left: 10px;
+}
+
+/*Elemento donde el atributo contiene con el valor dado*/
+div[attr1~="Parrafo"]{
+    border: 1px solid black;
+}
+
+/*Elemento donde el atributo contiene con el valor dado*/
+div[attr1*="do"]{
+    text-transform: uppercase;
+}
