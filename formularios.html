@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [name="conditions"]:checked{
+            margin-left: 50px;
+        }
+
+        [type="text"]:focus{
+            box-shadow: 5px 5px 10px red;
+        }
+
+        button:hover{
+            cursor:pointer
+        }
+
+        #button_fake{
+            border: 1px solid darkblue;
+            border-radius: 2px;
+        }
+
+        #button_fake:hover{
+            cursor: pointer;
+        }
+
+        input:required{
+            color:darkred;
+        }
+        /*ALGO ANTES DEL TEXTO*/
+        #p_aux::after{
+            content: url(Sello_UASLP.png);
+        }
+        /*PRIMERA LETRA DEL TEXTO*/
+        #p_aux::first-letter{
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+        /*PRIMERA LINEA DE TEXTO*/
+        #p_aux::first-line{
+            color: blue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <form>
+        <laber for="username">Nombre de usuario</laber>
+        <input type="text" name="username" autocomplete="off">
+        <br>
+        <labe for="birthday"Fecha de nacimiento></labe>
+        <input type="date" name="birthday">
+        <br>
+        <labe for="age">Edad</labe>
+        <input type="number" name="age" step="1" required>
+        <br>
+        <input type="checkbox" name="conditions">
+        <label for="conditions">Acepta los términos y condiciones</label>
+        <br>
+        <label for="color">Color favorito</label>
+        <input type="color" name="color">
+        <br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password">
+        <br>
+        <label for="sermester">Semestre</label>
+        <br>
+        <input type="radio" name="semester">
+        <label>Primero</label>
+        <input type="radio" name="semester">
+        <label>Segundo</label>
+        <input type="radio" name="semester">
+        <label>Tercero</label>
+        <input type="radio" name="semester">
+        <label>Cuarto</label>
+        <br><br>
+        <label for="description">Descripción</label>
+        <br>
+        <textarea name="description" cols="30" rows="10">Hola Mundo</textarea>
+        <br>
+        <label for="">Seleccionar</label>
+        <select name="" id="">
+            <option value="1">Primero</option>
+            <option value="2">Segundo</option>
+            <option value="3">Tercero</option>
+
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+        <button>Guardar</button>
+        <div id="button_fake">Presiona aqui</div>
+        <div id="p_aux">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est perspiciatis aliquam incidunt iusto ullam enim omnis laboriosam dolor quam, modi expedita explicabo quas eaque officia ab natus aut? Omnis, sed!</div>
+    </form>
+</body>
+</html>
